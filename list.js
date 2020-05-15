@@ -31,7 +31,7 @@ var List = {
         }
     },
     remove : function(id) {
-        var data = document.getElementById(id).value;
+        var data = document.getElementById(id).innerText;
         var jlist = localStorage.getItem('list');
         var lists = JSON.parse(jlist);
         var removeLoc = lists.indexOf(data);

@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="logout_box">
+        
+    </div>
+    <div id="weather_box">
+
+    </div>
     <div id="time_box">
         <h1 id="time"></h1>
     </div>
@@ -29,5 +35,19 @@
     <script src="timer.js"></script>
     <script src="name.js"></script>
     <script src="list.js"></script>
+    <script src="weather.js"></script>
+    <script>
+        function logout() {
+            if(localStorage.getItem('name') !== null) {
+                var html = '<input type="button" id="logout" value="logout" onclick="buttonClick()">';
+                document.querySelector('#logout_box').innerHTML = html;
+            }
+        }
+        function buttonClick() {
+            localStorage.clear();
+            window.location.reload();
+        }
+        logout();
+    </script>
 </body>
 </html>

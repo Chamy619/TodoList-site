@@ -26,10 +26,7 @@ div {
 #list_box {
     margin : 20px;
 }
-.list {
-    width:300px;
-    font-size : 30px;
-}
+
 h2 {
     font-size : 60px;
     color : lightblue;
@@ -44,4 +41,12 @@ li {
 }
 .list-group-item-action {
     background-color : rgb(255, 255, 255, 0.1);
+}
+.form-control {
+    width : 50%;
+    display : inline;
+    font-size : 20px;
+}
+#name_box {
+    text-align : center;
 }
